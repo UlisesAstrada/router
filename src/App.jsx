@@ -10,8 +10,11 @@ import {
 } from 'react-router-dom'
 
 function App() {
+
   return (
     <Router>
+      <Link to="/inicio">Inicio</Link>
+      <Link to="/">Base</Link>
       <Switch>
         <Route path='/inicio'>
           <Inicio />
