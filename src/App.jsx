@@ -13,14 +13,16 @@ function App() {
 
   return (
     <Router>
+
       <Link to="/inicio">Inicio</Link>
       <Link to="/">Base</Link>
+
       <Switch>
+        <Route exact path="/">
+          <Base />
+        </Route>
         <Route path='/inicio'>
           <Inicio />
-        </Route>
-        <Route path="/">
-          <Base />
         </Route>
       </Switch>
     </Router>
