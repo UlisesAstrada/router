@@ -1,4 +1,6 @@
 import React from 'react'
+import Base from './components/Base'
+import Inicio from './components/Inicio'
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -12,10 +14,10 @@ function App() {
     <Router>
       <Switch>
         <Route path='/inicio'>
-          Estás en el inicio
+          <Inicio />
         </Route>
         <Route path="/">
-          Esta es la URL base
+          <Base />
         </Route>
       </Switch>
     </Router>
